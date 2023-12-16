@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Picking a Winner</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">Picking a Winner</h1>
+    </header>
+    <main>
+      <section class="names">
+        <div class="enter-names">
+          <h2 class="subheader">Enter the name</h2>
+          <form action="#">
+            <input type="text" class="name-input" />
+            <input type="submit" value="Add >>" class="add" />
+          </form>
+        </div>
+        <div class="entered-names">
+          <h2 class="subheader">Names</h2>
+          <div class="names-space"></div>
+          <button class="pick-winner">Pick a Winner</button>
+        </div>
+      </section>
+      <div class="winner hide"><p class="winner-txt">The winner is</p><p class="winner-name"></p><button class="start-again">Start again</button></div>
+      <div class="blur hide"></div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
