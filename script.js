@@ -30,14 +30,18 @@ function addValue() {
         nameValue.charAt(0).toUpperCase() + nameValue.slice(1);
       namesArr.push(capitalizedName);
       nameInput.value = "";
-      let nameDiv = document.createElement("div");
-      nameDiv.setAttribute("class", "name");
-      nameDiv.dataset.name = capitalizedName;
-      let nameParagraph = document.createElement("p");
-      let nameTxt = document.createTextNode(capitalizedName);
-      nameParagraph.appendChild(nameTxt);
-      nameDiv.appendChild(nameParagraph);
-      namesSpace.appendChild(nameDiv);
+      namesSpace.innerHTML += `<div class = "name" data-name = "${capitalizedName}">
+      <p>${capitalizedName}</p>
+    </div>`
+
+      // let nameDiv = document.createElement("div");
+      // nameDiv.setAttribute("class", "name");
+      // nameDiv.dataset.name = capitalizedName;
+      // let nameParagraph = document.createElement("p");
+      // let nameTxt = document.createTextNode(capitalizedName);
+      // nameParagraph.appendChild(nameTxt);
+      // nameDiv.appendChild(nameParagraph);
+      // namesSpace.appendChild(nameDiv);
     }
   } else {
     nameInput.classList.add("shake", "shake-border");
